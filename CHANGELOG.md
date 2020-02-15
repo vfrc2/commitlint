@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.3.6](https://github.com/conventional-changelog/commitlint/compare/v8.3.5...v8.3.6) (2020-02-15)
+
+
+### Bug Fixes
+
+* **cli:** add missing regenerator-runtime to dependencies ([#919](https://github.com/conventional-changelog/commitlint/issues/919)) ([ee5eac9](https://github.com/conventional-changelog/commitlint/commit/ee5eac98fa97ba5ba17030c8d2705aee5c7f3a3a))
+* [#840](https://github.com/conventional-changelog/commitlint/issues/840) add caret to lodash versions ([#843](https://github.com/conventional-changelog/commitlint/issues/843)) ([ffc0bac](https://github.com/conventional-changelog/commitlint/commit/ffc0bac26993acb2ab6a8fa51065f93c92b0d644))
+* drop support for 'improvement' type ([#899](https://github.com/conventional-changelog/commitlint/issues/899)) ([b27ab08](https://github.com/conventional-changelog/commitlint/commit/b27ab08544373cfb72a4808756e2e8126ea96a97))
+* **config-lerna-scopes:** correct lerna in peerDependencies ([#980](https://github.com/conventional-changelog/commitlint/issues/980)) ([f88f00d](https://github.com/conventional-changelog/commitlint/commit/f88f00d5d3d0a247b5635b50248bbb942b1ec962))
+* incorrect use of when in getForcedCaseFn ([#993](https://github.com/conventional-changelog/commitlint/issues/993)) ([34c11b8](https://github.com/conventional-changelog/commitlint/commit/34c11b8f3f233eca51866274a10d35231e8eb3d4))
+* update dependency semver to v7.1.3 ([#995](https://github.com/conventional-changelog/commitlint/issues/995)) ([4ee307a](https://github.com/conventional-changelog/commitlint/commit/4ee307a1f8c861ae5d8a038560d166c5d00ea8ba))
+
+
+### Features
+
+* **config-conventional:** increase header-max-length to 100 ([#860](https://github.com/conventional-changelog/commitlint/issues/860)) ([ff11998](https://github.com/conventional-changelog/commitlint/commit/ff11998e0cf6fcd4f03bc18ab27b1bdd6bf21906)), closes [#859](https://github.com/conventional-changelog/commitlint/issues/859)
+* add possibility to extend from string ([#865](https://github.com/conventional-changelog/commitlint/issues/865)) ([056c6fe](https://github.com/conventional-changelog/commitlint/commit/056c6fef346b4e84f8b1f93038a9461a7cbd9beb))
+* extend references-empty rules ([d6bc050](https://github.com/conventional-changelog/commitlint/commit/d6bc0505e72b36a7a5d40803bf3004949e4f43f7))
+* passdown argv to lint command ([#891](https://github.com/conventional-changelog/commitlint/issues/891)) ([c49a57c](https://github.com/conventional-changelog/commitlint/commit/c49a57c77767b8213d565df3a8bbcd7369f36641))
+
+
+### BREAKING CHANGES
+
+* 'improvement' type will now be rejected by this config.
+
+
+
+
+
 ## [8.3.5](https://github.com/conventional-changelog/commitlint/compare/v8.3.4...v8.3.5) (2020-01-15)
 
 
