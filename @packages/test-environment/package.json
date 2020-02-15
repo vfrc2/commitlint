@@ -1,6 +1,6 @@
 {
   "name": "@commitlint/test-environment",
-  "version": "8.3.5",
+  "version": "8.3.6-vfrc29.0",
   "description": "test environment for @commitlint",
   "main": "lib/test-environment.js",
   "types": "lib/test-environment.d.ts",

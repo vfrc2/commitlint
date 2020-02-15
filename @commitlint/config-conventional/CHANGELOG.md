@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.3.6-vfrc29.0](https://github.com/conventional-changelog/commitlint/compare/v8.3.5...v8.3.6-vfrc29.0) (2020-02-15)
+
+
+### Bug Fixes
+
+* drop support for 'improvement' type ([#899](https://github.com/conventional-changelog/commitlint/issues/899)) ([b27ab08](https://github.com/conventional-changelog/commitlint/commit/b27ab08544373cfb72a4808756e2e8126ea96a97))
+
+
+### Features
+
+* **config-conventional:** increase header-max-length to 100 ([#860](https://github.com/conventional-changelog/commitlint/issues/860)) ([ff11998](https://github.com/conventional-changelog/commitlint/commit/ff11998e0cf6fcd4f03bc18ab27b1bdd6bf21906)), closes [#859](https://github.com/conventional-changelog/commitlint/issues/859)
+
+
+### BREAKING CHANGES
+
+* 'improvement' type will now be rejected by this config.
+
+
+
+
+
 ## [8.3.4](https://github.com/conventional-changelog/commitlint/compare/v8.3.3...v8.3.4) (2020-01-03)
 
 **Note:** Version bump only for package @commitlint/config-conventional

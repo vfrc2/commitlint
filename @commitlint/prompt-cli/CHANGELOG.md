@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.3.6-vfrc29.0](https://github.com/conventional-changelog/commitlint/compare/v8.3.5...v8.3.6-vfrc29.0) (2020-02-15)
+
+**Note:** Version bump only for package @commitlint/prompt-cli
+
+
+
+
+
 ## [8.3.5](https://github.com/conventional-changelog/commitlint/compare/v8.3.4...v8.3.5) (2020-01-15)
 
 **Note:** Version bump only for package @commitlint/prompt-cli
