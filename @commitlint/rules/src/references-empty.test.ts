@@ -8,7 +8,9 @@ const messages = {
 	comment: 'foo: baz\n#1 Comment',
 	reference: '#comment\nfoo: baz \nCloses #1',
 	references: '#comment\nfoo: bar \nCloses #1, #2, #3',
-	prefix: 'bar REF-1234'
+	prefix: 'bar REF-1234',
+	prefix2: 'feat: hello world REF-1234',
+	prefix3: 'chore: hello world'
 };
 
 const opts = (async () => {
@@ -27,6 +29,12 @@ const parsed = {
 	references: (async () =>
 		parse(messages.references, undefined, (await opts).parserOpts))(),
 	prefix: parse(messages.prefix, undefined, {
+		issuePrefixes: ['REF-']
+	}),
+	prefix2: parse(messages.prefix2, undefined, {
+		issuePrefixes: ['REF-']
+	}),
+	prefix3: parse(messages.prefix3, undefined, {
 		issuePrefixes: ['REF-']
 	})
 };
@@ -81,6 +89,30 @@ test('fails for references with always', async () => {
 
 test('succeeds for custom references with always', async () => {
 	const [actual] = referencesEmpty(await parsed.prefix, 'never');
+	const expected = true;
+	expect(actual).toEqual(expected);
+});
+
+test('succeed custom references only for sepcified types', async () => {
+	const [actual] = referencesEmpty(await parsed.prefix2, 'never', [
+		'feat',
+		'fix'
+	]);
+	const expected = true;
+	expect(actual).toEqual(expected);
+});
+
+test('succeed custom references only for sepcified types 2', async () => {
+	const [actual] = referencesEmpty(await parsed.prefix2, 'never', ['someType']);
+	const expected = true;
+	expect(actual).toEqual(expected);
+});
+
+test('succedd custom references only for sepcified types', async () => {
+	const [actual] = referencesEmpty(await parsed.prefix3, 'never', [
+		'feat',
+		'fix'
+	]);
 	const expected = true;
 	expect(actual).toEqual(expected);
 });
